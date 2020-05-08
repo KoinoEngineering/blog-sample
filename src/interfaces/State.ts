@@ -3,9 +3,8 @@ import { ArticlesState } from "src/apis/Articles/ArticlesReducer";
 import { ArticleState } from "src/pages/Article/ArticleReducer";
 import { CreateState } from "src/pages/Create/CreateReducer";
 import { TopState } from "src/pages/Top/TopReducer";
-import { WithReduxOutlineInput } from "src/components/atoms/ReduxOutlinedInput/ReduxOutlinedInputReducer";
 
-export interface State extends WithReduxOutlineInput {
+export interface State {
     articles: ArticlesState;
     router: RouterState;
     top: TopState
